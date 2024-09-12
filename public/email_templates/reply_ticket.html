@@ -1,0 +1,80 @@
+<!-- reply_ticket.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .container {
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #5e5ba9;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      h2 {
+        color: #333;
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 5px 0 15px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #5e5ba9;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-left: 10px; /* Added margin for separation */
+      }
+      .btn:hover {
+        background-color: #4a4a8a; /* Darker shade for hover */
+      }
+      .login-notice {
+        background-color: #e8eaf6;
+        border-left: 5px solid #5e5ba9;
+        padding: 10px 15px; /* Adjusted padding for better centering */
+        margin-top: 10px; /* Space below */
+        font-weight: bold;
+        color: #5e5ba9;
+        display: flex; /* Use flexbox */
+        align-items: center; /* Vertically center the content */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your ticket #{{ticketId}} has gotten a response!</h1>
+      <h2>Course:</h2>
+      <p>{{courseName}}</p>
+      <h2>Reason:</h2>
+      <p>{{reason}}</p>
+      <h2>Description:</h2>
+      <p>{{description}}</p>
+      <h2>Professor's Response:</h2>
+      <p>{{reply}}</p>
+
+      <div class="login-notice">
+        Please log in to view more details.
+        <a href="https://extremeoptimists-adminify.vercel.app" class="btn"
+          >Log In</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
